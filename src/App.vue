@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    1111
+    <router-view/>
+    <footer-nav v-if="this.$route.meta.isShowFooter"/>
+    <!--遮罩层6-->
   </div>
 </template>
 
 <script>
-  import axios from 'axios'
+  import FooterNav from './components/Footer/Footer.vue';
   export default {
-    mounted(){
-      axios.get('/category')
-        .then(res=>{
-          console.log(res.data)
-        })
+    components : {
+      FooterNav
     }
   }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>

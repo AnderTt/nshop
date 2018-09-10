@@ -1,6 +1,7 @@
 /*使用mock.js提供mock数据接口*/
 import Mock from 'mockjs';
 import data from './data.json'
+console.log(data);
 
 //首页的mock数据接口
 Mock.mock('/home',{code:0,data:data.home});
