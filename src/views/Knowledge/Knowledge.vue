@@ -51,7 +51,8 @@
         <!--更多精彩-->
         <More v-if="Knowledge.yxWeek" :data="Knowledge.yxWeek"/>
       </div>
-      <i class="goTop"></i>
+      <!--返回顶部-->
+      <GoTop/>
     </div>
 </template>
 <script>
@@ -62,13 +63,15 @@
   import RecommendToyou from './RecommendToyou/RecommendToyou.vue'
   import Ten from './Ten/Ten.vue'
   import {mapState} from 'vuex'
+  import GoTop from '../../components/GoTop/GoTop.vue'
   export default {
     components : {
       Banner,
       BestGoods,
       More,
       RecommendToyou,
-      Ten
+      Ten,
+      GoTop
     },
     mounted(){
       this.$store.dispatch('getKnowledge')

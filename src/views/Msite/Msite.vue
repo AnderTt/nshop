@@ -78,6 +78,7 @@
         <!--返回顶部-->
         <GoTop/>
       </div>
+      <!--遮罩层-->
     </div>
 </template>
 <script>
