@@ -3,7 +3,7 @@
   <div class="swiper-container">
     <div class="swiper-wrapper" v-if="home">
       <div class="swiper-slide" v-for="slide in home.focusList" :key="slide.id">
-        <img :src="slide.picUrl">
+        <img v-lazy="slide.picUrl">
       </div>
     </div>
     <!-- 如果需要分页器 -->
