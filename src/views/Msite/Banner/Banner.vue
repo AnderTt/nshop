@@ -1,7 +1,7 @@
 <template>
   <!--swiper-->
   <div class="swiper-container">
-    <div class="swiper-wrapper" v-if="home">
+    <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in home.focusList" :key="slide.id">
         <img v-lazy="slide.picUrl">
       </div>
@@ -34,7 +34,7 @@
         new Swiper('.swiper-container', {
           initialSlide :0,
           loop: true,
-          autoplay: true,
+//         /* autoplay: true,*/
           /*observer:true,//修改swiper自己或子元素时，自动初始化swiper
           observeParents:true,//修改swiper的父元素时，自动初始化swiper*/
           pagination: {
@@ -48,12 +48,12 @@
 <style lang="stylus" rel="stylesheet/stylus">
   .swiper-container
     width 100%
-    height auto
+    height 100%
     .swiper-wrapper
       width 100%
       height 100%
       img
-        width 100%
+        width 100% !important
         height 100%
     .swiper-pagination-bullet
       width 40px

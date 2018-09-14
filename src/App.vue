@@ -15,5 +15,7 @@
   }
 </script>
 
-<style>
+<style lang="stylus" rel="stylesheet/stylus">
+  #app
+    width 100%
 </style>

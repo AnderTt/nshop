@@ -14,7 +14,7 @@
               <p class="price">{{data.Item[2].priceInfo}}元起</p>
             </div>
             <div class="decs">
-              {{data.Item[2].subTitle}}}
+              {{data.Item[2].subTitle}}
             </div>
           </div>
         </a>

@@ -7,16 +7,14 @@ import 'lib-flexible'
 import store from './store'
 import Mint from 'mint-ui';
 import VueLazyload from 'vue-lazyload'
-
 import loading from './assets/images/loading.gif'
-
-Vue.use(VueLazyload)
 
 import './mock/mockServer'
 import Split from './components/Split/Split.vue'
 
 // or with options
 Vue.use(VueLazyload, {
+  /*preLoad : 1.3,*/
   loading
 })
 
